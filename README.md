@@ -1,18 +1,18 @@
 # Project-1-Runtime-Terror
 
-## BookClub
+## You Get A Book
 
 ## Description
 
 Application which allows user to search book tiltle and retrieve book information, ratings and reviews. Provide url links for locations to purchase said title.
-? On Homepage provide top ten bestsellers ?
+On Homepage provide top ten bestsellers
 
 ## User Story
 
 ```
 AS A Book Worm
 I WANT to search book titles
-SO THAT I can be given more information about my book of interest
+SO THAT I can be given more information about my book of interest and where to purchase
 ```
 
 ## Acceptance Criteria
@@ -43,7 +43,7 @@ Goodreads (Server-side API)
 
 Amazon Product Search v1 (Server-side API)
 
-Bulma (Third-party Styles API)
+Bulma (Third-party Styles API) OR Materialize (Third-party Styles API)
 
 ## Tasks
 
