@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>The Book Club</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="col s12">
+        <h1>The Book Club</h1>
+        <nav class="navbar">
+          <div class="">
+            <form id="book-form" class="card-body">
+              <input
+                id="input-text"
+                type="text"
+                placeholder="Title, Author"
+                class="form-input"
+              />
+              <button id="search-button" type="submit" class="btn">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="">
+        <div class="bio-block">
+          <h2>Description Title</h2>
+          <p>this is a description</p>
+        </div>
+        <div class="card-list">
+          <h3>Top Ten Best-Sellers:</h3>
+          <div>
+            <ul class="best-sellers-list">
+              <li class="card-item" id="card-1"></li>
+              <li class="card-item" id="card-2"></li>
+              <li class="card-item" id="card-3"></li>
+              <li class="card-item" id="card-4"></li>
+              <li class="card-item" id="card-5"></li>
+              <li class="card-item" id="card-6"></li>
+              <li class="card-item" id="card-7"></li>
+              <li class="card-item" id="card-8"></li>
+              <li class="card-item" id="card-9"></li>
+              <li class="card-item" id="card-10"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- jQuery <script> tag -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery UI <script> tag -->
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+      integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  </body>
 </html>
