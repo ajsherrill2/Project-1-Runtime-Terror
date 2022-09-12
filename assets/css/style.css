@@ -15,12 +15,16 @@
 html {
     font-size: 1rem;
 }
+header {
+    display: flex;
+    flex-direction: row;
+}
 
 body {
     background: var(--gray-2);
-    font-family: ; /* Add font */
+    font-family:'Courier New', Courier, monospace; /* Add font */
     color: var(--smoke); /* Add color */
     margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: 2rem;
 }
