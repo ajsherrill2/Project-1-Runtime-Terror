@@ -18,8 +18,8 @@ html {
 
 body {
     background: var(--gray-2);
-    font-family: ; /* Add font */
-    color: var(--smoke); /* Add color */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Add font */
+    color: var(--white); 
     margin: 5px;
     padding: 10px;
     line-height: 1.5;
@@ -27,7 +27,7 @@ body {
 
 .container-header {
     width: 100%;
-    padding: 10px;
+    padding: 0;
     margin: 10px;
 }
 
@@ -35,7 +35,33 @@ h1 {
     text-align: center;
 }
 
-.form-input {
-    width: 30%;
-    align-content: left;
+.navbar {
+    border-radius: 15px;
 }
+
+.container-form {
+    max-width: 33%;
+    align-content: left;
+    
+}
+
+#input-text {
+    color: black;
+    background-color: white;
+    border: var(--box-shadow);
+    border-radius: 15px;
+    margin-left: 12px;
+    
+}
+
+/* changes grey placeholder text to more visible black */
+
+::placeholder { 
+    color: var(--black-2);
+    font-size: 24px;
+    padding-left: 10px;
+    
+ } 
+
+
+
