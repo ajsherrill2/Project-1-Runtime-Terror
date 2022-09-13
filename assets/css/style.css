@@ -15,22 +15,12 @@
 html {
     font-size: 1rem;
 }
-header.container {
-    justify-content: center;
-    max-width: max-content;
-}
-
-h1 {
-    justify-content: center;
-    margin: 0;
-    padding: 5px;
-}
 
 body {
     background: var(--gray-2);
-    font-family:'Courier New', Courier, monospace; /* Add font */
+    font-family: ; /* Add font */
     color: var(--smoke); /* Add color */
     margin: 0;
     padding: 0;
-    line-height: 2rem;
+    line-height: 1.5;
 }
