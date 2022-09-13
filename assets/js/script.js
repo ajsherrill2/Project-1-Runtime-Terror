@@ -22,11 +22,11 @@ const bookPrice = $('.price');
 let apiUrl = ''; // put future api url here
 let apiKey = ''; // put future api key here
 $(resultsPanel).addClass('visible');
-$(bookTitle)[0].textContent = //input data path
-$(bookCover)[0].src = //input data path
-$(bookAuthor)[0].textContent = //input data path
-$(bookRating)[0].textContent = //input data path
-$(bookPrice)[0].textContent = //input data path
+// $(bookTitle)[0].textContent = //input data path
+// $(bookCover)[0].src = //input data path
+// $(bookAuthor)[0].textContent = //input data path
+// $(bookRating)[0].textContent = //input data path
+// $(bookPrice)[0].textContent = //input data path
 
 // Functions
 // Function that catches relevant information on books searched
@@ -55,7 +55,10 @@ function formSubmitHandler() {
 })};
 
 function getBookInfo() {};
-function getBestSellers() {};
+function getBestSellers() {
+    for (i = 0; i<9; i++)
+        
+};
 
 // Event listeners
 $(bookFormEl).on('submit', function (e) {
