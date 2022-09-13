@@ -20,7 +20,22 @@ body {
     background: var(--gray-2);
     font-family: ; /* Add font */
     color: var(--smoke); /* Add color */
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 10px;
     line-height: 1.5;
+}
+
+.container-header {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-input {
+    width: 30%;
+    align-content: left;
 }
