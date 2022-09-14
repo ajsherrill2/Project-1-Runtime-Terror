@@ -18,6 +18,7 @@ const bookPrice = $('.price');
 // api link - https://www.googleapis.com/books/v1/volumes?q=search+terms&key=[]
 
 
+
 // Other Variables (to be used in a function later)
 let apiUrl = ''; // put future api url here
 let apiKey = ''; // put future api key here
@@ -35,8 +36,8 @@ function formSubmitHandler() {
     let QueryUrl = `https://www.googleapis.com/books/v1/volumes?q=${userSearch}&key=AIzaSyAwwfPg0aHfuV0X2St7pVv4uc2RgHEQxCY`;
     console.log(QueryUrl);
     fetch(QueryUrl)
-    .then(res => res.json() 
-)   .then(function(data) {
+    .then(res => res.json()) 
+    .then(function(data) {
         console.log(data)
         let resultsLength = data.items.length;
         let bookTitle = data.items[0].volumeInfo.title;
@@ -55,10 +56,40 @@ function formSubmitHandler() {
 })};
 
 function getBookInfo() {};
-function getBestSellers() {
-    for (i = 0; i<9; i++)
-        
+$(document).ready(function getBestSellers() {
+    const cards = [...document.querySelectorAll('.card-item')];
+        console.log(cards);
+
+    Object.keys(cardItemArray).forEach(key =>  {
+        const value = cardItemArray[key];
+        console.log(value);
+        var bestSellersQuery = `https://www.googleapis.com/books/v1/volumes?q=${value}&key=AIzaSyAwwfPg0aHfuV0X2St7pVv4uc2RgHEQxCY`;
+        fetch(bestSellersQuery)
+        .then(res => res.json())       
+        .then(function(data) {
+            console.log(data);
+        });
+    });
+});
+
+const cardItemArray = {
+    card1: 'B0176M3U10',
+    card2: 'B084M1YJB8',
+    card3: '9780316413039',
+    card4: '9780547928227',
+    card5: '9780735219090',
+    card6: '9780765364876',
+    card7: '9781982185824',
+    card8: '9780765326355',
+    card9: '9780593396599',
+    card10: '9781594489501'
 };
+
+
+Object.keys(cardItemArray).forEach(key =>  {
+    const value = cardItemArray[key];
+    console.log(value);
+});
 
 // Event listeners
 $(bookFormEl).on('submit', function (e) {
@@ -74,4 +105,3 @@ $(cardItem).on('click', function () {
 
     formSubmitHandler(bestSellerSearch);
 });
-
