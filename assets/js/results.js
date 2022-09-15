@@ -32,6 +32,7 @@ $(document).ready(function getBookInfo() {
         console.log(data)
         
         
+        
     })
 });
 

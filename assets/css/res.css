@@ -1,0 +1,73 @@
+/*book results styling */
+
+body {
+    background: #3e3e42;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Add font */
+    color: #fff; 
+    margin: 5px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+h3 {
+    text-align: center;
+}
+
+html {
+    font-size: 1rem;
+}
+
+/*holds the entire content to be displayed*/
+
+.container {
+    background-color: #c0c0c0;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border: dashed;
+   
+}
+
+/*nav bar styling */
+
+.navbar {
+    border-radius: 15px;
+    background-color: #c0c0c0;
+}
+
+/*javascript components*/
+
+.title {
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+}
+
+.author {
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+}
+
+.rating {
+    width: 250px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    background-color: #252526;
+}
+
+.price {
+    width: 250px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    background-color: #252526;
+}
+
+.img {
+    width: auto;
+    height: 250px;
+}
