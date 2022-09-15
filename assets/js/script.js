@@ -55,8 +55,6 @@ function formSubmitHandler() {
     return bookISBN;     
 })};
 
-function getBookInfo() {};
-
 function getBestSellers() {};
 
 // Event listeners
