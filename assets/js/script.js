@@ -14,15 +14,11 @@ const bookAuthor = $('.author');
 const bookRating = $('.rating');
 const bookPrice = $('.price');
 
-// API Link
-// api link - https://www.googleapis.com/books/v1/volumes?q=search+terms&key=[]
-
-
 
 // Other Variables (to be used in a function later)
 let apiUrl = ''; // put future api url here
 let apiKey = ''; // put future api key here
-$(resultsPanel).addClass('visible');
+// $(resultsPanel).addClass('visible');
 // $(bookTitle)[0].textContent = //input data path
 // $(bookCover)[0].src = //input data path
 // $(bookAuthor)[0].textContent = //input data path
@@ -36,8 +32,8 @@ function formSubmitHandler() {
     let QueryUrl = `https://www.googleapis.com/books/v1/volumes?q=${userSearch}&key=AIzaSyAwwfPg0aHfuV0X2St7pVv4uc2RgHEQxCY`;
     console.log(QueryUrl);
     fetch(QueryUrl)
-    .then(res => res.json()) 
-    .then(function(data) {
+    .then(res => res.json() 
+)   .then(function(data) {
         console.log(data)
         let resultsLength = data.items.length;
         let bookTitle = data.items[0].volumeInfo.title;
@@ -56,33 +52,40 @@ function formSubmitHandler() {
 })};
 
 function getBookInfo() {};
+
 $(document).ready(function getBestSellers() {
     const cards = [...document.querySelectorAll('.card-item')];
         console.log(cards);
 
-    Object.keys(cardItemArray).forEach(key =>  {
+    Object.keys(cardItemArray).forEach((key, index) =>  {
         const value = cardItemArray[key];
         console.log(value);
         var bestSellersQuery = `https://www.googleapis.com/books/v1/volumes?q=${value}&key=AIzaSyAwwfPg0aHfuV0X2St7pVv4uc2RgHEQxCY`;
         fetch(bestSellersQuery)
         .then(res => res.json())       
         .then(function(data) {
-            console.log(data);
+            console.log(data)
+            $(".img")[index].src = data.items[0].volumeInfo.imageLinks.thumbnail;
+            $(".title")[index].textContent = data.items[0].volumeInfo.title;
+            $(".author")[index].textContent = data.items[0].volumeInfo.authors[0];
+            $(".rating")[index].textContent = data.items[0].volumeInfo.averageRating;
+            $(".price")[index].textContent = '$' + data.items[0].saleInfo.listPrice.amount;
         });
+
     });
 });
 
 const cardItemArray = {
-    card1: 'B0176M3U10',
-    card2: 'B084M1YJB8',
-    card3: '9780316413039',
-    card4: '9780547928227',
-    card5: '9780735219090',
-    card6: '9780765364876',
-    card7: '9781982185824',
-    card8: '9780765326355',
-    card9: '9780593396599',
-    card10: '9781594489501'
+    card1: '978-0143127741',
+    card2: '9780553582017',
+    card3: '978-0316413039',
+    card4: '1439527261',
+    card5: '9780735219113',
+    card6: '978-1250754738',
+    card7: '978-1982185824',
+    card8: '978-0765365279',
+    card9: '978-0593396599',
+    card10: '978-1594489501'
 };
 
 
@@ -90,14 +93,11 @@ Object.keys(cardItemArray).forEach(key =>  {
     const value = cardItemArray[key];
     console.log(value);
 });
-
 // Event listeners
 $(bookFormEl).on('submit', function (e) {
     e.preventDefault();
 
     formSubmitHandler();
-
-    $("form")[0].reset();
 });
 
 $(cardItem).on('click', function () {
@@ -105,3 +105,4 @@ $(cardItem).on('click', function () {
 
     formSubmitHandler(bestSellerSearch);
 });
+
