@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add google fonts -->
+    <!-- Add font icons -->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>The Book Club</title>
+  </head>
+  
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Add google fonts -->
-  <!-- Add font icons -->
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>The Book Club</title>
-</head>
-
-<body>
-  <header class="container-header">
-    <div class="col s12">
-      <h1>The Book Club</h1>
-      <nav class="navbar">
-        <div class="row">
-          <form class="col s12 container-form">
-            <div class="row">
-              <div class="input-field col s6">
-                <form id="book-form" class="card-body">
-                  <input id="input-text" type="text" placeholder="Title, Author" class="form-input" />
-                </form>
-              </div>
-              <div class="input-field col s6">
-                <button class="btn hoverable" type="submit" id="search-button" name="action">Submit
-
-                </button>
+  <body>
+    <header class="container-header">
+      <div class="col s12">
+        <h1>The Book Club</h1>
+        <nav class="navbar">
+          <div class="row">
+            <div class="col s12 container-form">
+              <div class="row">
+                <div class="input-field col s6">
+                  <form id="book-form" class="card-body">
+                    <input
+                      id="input-text"
+                      type="text"
+                      placeholder="Title, Author"
+                      class="form-input"
+                    />
+                    <button class="btn hoverable" type="submit" id="search-button">                      
+                      Submit
+                    </button>
+                  </form>
+                </div>    
               </div>
             </div>
-          </form>
-        </div>
-      </nav>
-    </div>
-  </header>
+          </div>
+        </nav>
+      </div>
+    </header>
 
   <main class="container">
     <section class="">
@@ -242,93 +248,7 @@
               </div>
             </div>
           </div>
- 
-          <ul class="best-sellers-list">
-
-            <li class="card-item" id="card-1">
-              <h4 class="title">Title</h4>
-              <img class="img">Image</img>
-              <p class="author">Author</p>
-              <p class="rating">Rating</p>
-              <p class="price">Price</p>
-            </li>
-
-            <li class="card-item" id="card-2">
-              <h4 class="title">Title</h4>
-              <img class="img">Image</img>
-              <p class="author">Author</p>
-              <p class="rating">Rating</p>
-              <p class="price">Price</p>
-            </li>
-
-            <li class="card-item" id="card-3">
-              <h4 class="title">Title</h4>
-              <img class="img">Image</img>
-              <p class="author">Author</p>
-              <p class="rating">Rating</p>
-              <p class="price">Price</p>
-            </li>
-
-            <li class="card-item" id="card-4">
-              <h4 class="title">Title</h4>
-              <img class="img">Image</img>
-              <p class="author">Author</p>
-              <p class="rating">Rating</p>
-              <p class="price">Price</p>
-            </li>
-
-            <li class="card-item" id="card-5">
-              <h4 class="title">Title</h4>
-              <img class="img">Image</img>
-              <p class="author">Author</p>
-              <p class="rating">Rating</p>
-              <p class="price">Price</p>
-            </li>
-
-            <li class="card-item" id="card-6">
-              <h4 class="title">Title</h4>
-              <img class="img">Image</img>
-              <p class="author">Author</p>
-              <p class="rating">Rating</p>
-              <p class="price">Price</p>
-            </li>
-
-            <li class="card-item" id="card-7">
-              <h4 class="title">Title</h4>
-              <img class="img">Image</img>
-              <p class="author">Author</p>
-              <p class="rating">Rating</p>
-              <p class="price">Price</p>
-            </li>
-            </li>
-
-            <li class="card-item" id="card-8">
-              <h4 class="title">Title</h4>
-              <img class="img">Image</img>
-              <p class="author">Author</p>
-              <p class="rating">Rating</p>
-              <p class="price">Price</p>
-            </li>
-
-            </li>
-            <li class="card-item" id="card-9">
-              <h4 class="title">Title</h4>
-              <img class="img">Image</img>
-              <p class="author">Author</p>
-              <p class="rating">Rating</p>
-              <p class="price">Price</p>
-            </li>
-
-            <li class="card-item" id="card-10">
-              <h4 class="title">Title</h4>
-              <img class="img">Image</img>
-              <p class="author">Author</p>
-              <p class="rating">Rating</p>
-              <p class="price">Price</p>
-            </li>
-          </ul>
         </div>
-
       </div>
     </section>
   </main>
