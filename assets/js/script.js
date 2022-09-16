@@ -45,9 +45,6 @@ function formSubmitHandler() {
     return bookISBN;     
 })};
 
-function getBookInfo() {};
-
-
 // Please comment the below function out when testing!
 $(document).ready(function getBestSellers() {
     const cards = [...document.querySelectorAll('.card-item')];
