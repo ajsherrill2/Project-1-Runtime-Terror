@@ -20,6 +20,8 @@ html {
 /*holds the entire content to be displayed*/
 
 .container {
+    display:flex;
+    justify-content: center;
     background-color: #221D1F;
     border-radius: 20px;
     margin-top: 20px;
@@ -67,7 +69,13 @@ html {
     background-color: #5D4F54;
 }
 
-.img {
-    width: auto;
-    height: 250px;
+/*made an id to center the image*/
+#pic {
+    display:flex;
+    justify-content: center;
 }
+
+.img {
+    width: 250px;
+    align-items: center;
+   }
