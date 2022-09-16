@@ -35,8 +35,19 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+    
+}
+
+p {
+    font-size: 20px;
+}
+
+
 .navbar {
     border-radius: 15px;
+    background-color: #c0c0c0;
 }
 nav .input-field input {
     padding: 0;
