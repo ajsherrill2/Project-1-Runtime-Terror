@@ -13,7 +13,7 @@
 }
 
 html {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 body {
@@ -40,22 +40,13 @@ h1 {
     text-align: center;
 }
 
-
-.navbar {
+.nav-wrapper {
     border-radius: 15px;
     background-color: #c0c0c0;
-}
-nav .input-field input {
-    padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-form {
-    max-width: 33%;
-    align-items: center;
-    
-    
-    
-}
 .container-cards {
     width: 100%;
     
@@ -67,24 +58,43 @@ nav .input-field input {
     min-width: 200px;
 }
 
+#book-form {
+    display: flex;
+    max-width: 33%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-grow: 1;
+}
+
+form {
+    display: flex;
+    margin-top: .5%;
+    flex-grow: 2;
+}
+
 #input-text {
+    font-size: 16px;
     color: black;
     background-color: white;
-    border: var(--box-shadow);
     border-radius: 15px;
-    margin-left: 12px;
     text-align: center;
-    
+    margin: auto;
 }
+
+#search-button {
+    background-color: #5D4F54 !important;
+}
+
+
+
 
 /* changes grey placeholder text to more visible black */
 
 ::placeholder { 
     color: var(--black-2);
     font-size: 24px;
-    padding-left: 10px;
-    
- } 
+} 
 
  /*bio description and instruction notes container*/
 
@@ -115,8 +125,6 @@ nav .input-field input {
     border-radius: 20px;
     color: #fff;
     max-width: 350px;
-    
-
 }
 
 /*container holding javascript stuff*/
@@ -129,5 +137,4 @@ nav .input-field input {
     flex-direction: row;
     text-align: center;
     border-radius: 20px;
-    
 }
