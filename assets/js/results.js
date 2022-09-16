@@ -11,6 +11,7 @@ const resultsPanel = $('.results');
 const bookTitle = $('.title');
 const bookCover = $('.img');
 const bookAuthor = $('.author');
+const bookDescription = $('.description');
 const bookRating = $('.rating');
 const bookPrice = $('.price');
 
@@ -33,8 +34,8 @@ $(document).ready(function getBookInfo() {
         $(bookTitle)[0].textContent = data.items[0].volumeInfo.title;
         $(bookCover)[0].src = data.items[0].volumeInfo.imageLinks.thumbnail;
         $(bookAuthor)[0].textContent = data.items[0].volumeInfo.authors[0];
+        $(bookDescription)[0].textContent = data.items[0].volumeInfo.description;
         $(bookRating)[0].textContent = data.items[0].volumeInfo.averageRating;
-        $(bookPrice)[0].textContent = data.items[0].saleInfo;
     })
 });
 
