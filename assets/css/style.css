@@ -35,6 +35,12 @@ h1 {
     text-align: center;
 }
 
+/*h3 text*/
+#text{
+    text-align: center;
+}
+
+
 .navbar {
     border-radius: 15px;
     background-color: #c0c0c0;
@@ -80,6 +86,8 @@ nav .input-field input {
     
  } 
 
+ /*bio description and instruction notes container*/
+
  .bio-container {
     background-color: #221D1F;
     border-radius: 20px;
@@ -89,4 +97,37 @@ nav .input-field input {
     font-size: 25px;
 }
 
+/*entire card container*/
+#book-div{
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #221D1F;  
+    border:#fff dashed;
+}
 
+/*javascript stuff inserted*/
+.book-container {
+    background-color: #5D4F54;
+    display:block;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    color: #fff;
+    max-width: 350px;
+    
+
+}
+
+/*container holding javascript stuff*/
+#book-record {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 20px;
+    
+}

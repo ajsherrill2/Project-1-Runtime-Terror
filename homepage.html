@@ -29,7 +29,7 @@
                     <input
                       id="input-text"
                       type="text"
-                      placeholder="Title, Author"
+                      placeholder="Book Title"
                       class="form-input"
                     />
                     <button class="btn hoverable" type="submit" id="search-button">                      
@@ -52,206 +52,131 @@
           <p>Looking for something to read? Simply enter the title of the book you're interested in and hit the search button to learn more. If you're looking for some reading material, try one of these best sellers on the homepage!</p>
         </div>
     </div>
-      <div class="card-list">
-        <h3>Top Ten Best-Sellers:</h3>
-        <div>
-          <!-- need minimum widths for cards focus on mobile first -->
-          <div class="container-cards">
-            <div class="row">
-              <div class="col l2 m2 s12 book-card">
-                <div class="card small sticky-action">
-                  <div class="card-image">
-                    <img src="">
-                    <span class="card-title">Book 1</span>
-                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
-                  </div>
-                  <div class="card-content">
-                    <p>list item info here for book...</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title">Michael<i class="right">x</i></span>
-                    <p>This is text that will appear</p>
-                  </div>
-                  <div class="card-action">
-                    <a>More Book Information Here</a>
-                  </div>
-                </div>
+   
+    <div class="card-list" id="book-div" >
+            <div id="text"> <h3>Top Ten Best-Sellers:</h3> </div>
+            <div id="book-record">
+                    <div class="book-container">
+                        <ul class="best-sellers-list">
+                          <li class="card-item" id="card-1">
+                            <h4 class="title"></h4>
+                            <img class="img"></img>
+                            <p class="author"></p>
+                            <p class="rating"></p>    
+                            <p class="price"></p>
+                          </li>
+                        </ul>
+                    </div>
+                    
+                <div class="book-container">
+                  <ul class="best-sellers-list">
+                    <li class="card-item" id="card-1">
+                      <h4 class="title"></h4>
+                      <img class="img"></img>
+                      <p class="author"></p>
+                      <p class="rating"></p>    
+                      <p class="price"></p>
+                    </li>
+                  </ul>
               </div>
-              <div class="col l2 m2 s12 book-card">
-                <div class="card small sticky-action">
-                  <div class="card-image">
-                    <img src="">
-                    <span class="card-title">Book 1</span>
-                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
-                  </div>
-                  <div class="card-content">
-                    <p>list item info here for book...</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title">Michael<i class="right">x</i></span>
-                    <p>This is text that will appear</p>
-                  </div>
-                  <div class="card-action">
-                    <a>More Book Information Here</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col l2 m2 s12 book-card">
-                <div class="card small sticky-action">
-                  <div class="card-image">
-                    <img src="">
-                    <span class="card-title">Book 1</span>
-                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
-                  </div>
-                  <div class="card-content">
-                    <p>list item info here for book...</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title">Michael<i class="right">x</i></span>
-                    <p>This is text that will appear</p>
-                  </div>
-                  <div class="card-action">
-                    <a>More Book Information Here</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col l2 m2 s12 book-card">
-                <div class="card small sticky-action">
-                  <div class="card-image">
-                    <img src="">
-                    <span class="card-title">Book 1</span>
-                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
-                  </div>
-                  <div class="card-content">
-                    <p>list item info here for book...</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title">Michael<i class="right">x</i></span>
-                    <p>This is text that will appear</p>
-                  </div>
-                  <div class="card-action">
-                    <a>More Book Information Here</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col l2 m2 s12 book-card">
-                <div class="card small sticky-action">
-                  <div class="card-image">
-                    <img src="">
-                    <span class="card-title">Book 1</span>
-                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
-                  </div>
-                  <div class="card-content">
-                    <p>list item info here for book...</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title">Michael<i class="right">x</i></span>
-                    <p>This is text that will appear</p>
-                  </div>
-                  <div class="card-action">
-                    <a>More Book Information Here</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col l2 m2 s12 book-card">
-                <div class="card small sticky-action">
-                  <div class="card-image">
-                    <img src="">
-                    <span class="card-title">Book 1</span>
-                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
-                  </div>
-                  <div class="card-content">
-                    <p>list item info here for book...</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title">Michael<i class="right">x</i></span>
-                    <p>This is text that will appear</p>
-                  </div>
-                  <div class="card-action">
-                    <a>More Book Information Here</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col l2 m2 s12 book-card">
-                <div class="card small sticky-action">
-                  <div class="card-image">
-                    <img src="">
-                    <span class="card-title">Book 1</span>
-                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
-                  </div>
-                  <div class="card-content">
-                    <p>list item info here for book...</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title">Michael<i class="right">x</i></span>
-                    <p>This is text that will appear</p>
-                  </div>
-                  <div class="card-action">
-                    <a>More Book Information Here</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col l2 m2 s12 book-card">
-                <div class="card small sticky-action">
-                  <div class="card-image">
-                    <img src="">
-                    <span class="card-title">Book 1</span>
-                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
-                  </div>
-                  <div class="card-content">
-                    <p>list item info here for book...</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title">Michael<i class="right">x</i></span>
-                    <p>This is text that will appear</p>
-                  </div>
-                  <div class="card-action">
-                    <a>More Book Information Here</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col l2 m2 s12 book-card">
-                <div class="card small sticky-action">
-                  <div class="card-image">
-                    <img src="">
-                    <span class="card-title">Book 1</span>
-                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
-                  </div>
-                  <div class="card-content">
-                    <p>list item info here for book...</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title">Michael<i class="right">x</i></span>
-                    <p>This is text that will appear</p>
-                  </div>
-                  <div class="card-action">
-                    <a>More Book Information Here</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col l2 m2 s12 book-card">
-                <div class="card small sticky-action">
-                  <div class="card-image">
-                    <img src="">
-                    <span class="card-title">Book 1</span>
-                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
-                  </div>
-                  <div class="card-content">
-                    <p>list item info here for book...</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title">Michael<i class="right">x</i></span>
-                    <p>This is text that will appear</p>
-                  </div>
-                  <div class="card-action">
-                    <a>More Book Information Here</a>
-                  </div>
-                </div>
-              </div>
+              
+              <div class="book-container">
+                <ul class="best-sellers-list">
+                  <li class="card-item" id="card-1">
+                    <h4 class="title"></h4>
+                    <img class="img"></img>
+                    <p class="author"></p>
+                    <p class="rating"></p>    
+                    <p class="price"></p>
+                  </li>
+                </ul>
             </div>
+              
+            <div class="book-container">
+              <ul class="best-sellers-list">
+                <li class="card-item" id="card-1">
+                  <h4 class="title"></h4>
+                  <img class="img"></img>
+                  <p class="author"></p>
+                  <p class="rating"></p>    
+                  <p class="price"></p>
+                </li>
+              </ul>
           </div>
-        </div>
-      </div>
+              
+          <div class="book-container">
+            <ul class="best-sellers-list">
+              <li class="card-item" id="card-1">
+                <h4 class="title"></h4>
+                <img class="img"></img>
+                <p class="author"></p>
+                <p class="rating"></p>    
+                <p class="price"></p>
+              </li>
+            </ul>
+          </div>
+                    
+          <div class="book-container">
+            <ul class="best-sellers-list">
+              <li class="card-item" id="card-1">
+                <h4 class="title"></h4>
+                <img class="img"></img>
+                <p class="author"></p>
+                <p class="rating"></p>    
+                <p class="price"></p>
+              </li>
+            </ul>
+          </div>
+              
+          <div class="book-container">
+            <ul class="best-sellers-list">
+              <li class="card-item" id="card-1">
+                <h4 class="title"></h4>
+                <img class="img"></img>
+                <p class="author"></p>
+                <p class="rating"></p>    
+                <p class="price"></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="book-container">
+            <ul class="best-sellers-list">
+              <li class="card-item" id="card-1">
+                <h4 class="title"></h4>
+                <img class="img"></img>
+                <p class="author"></p>
+                <p class="rating"></p>    
+                <p class="price"></p>
+              </li>
+            </ul>
+          </div>
+              
+          <div class="book-container">
+            <ul class="best-sellers-list">
+              <li class="card-item" id="card-1">
+                <h4 class="title"></h4>
+                <img class="img"></img>
+                <p class="author"></p>
+                <p class="rating"></p>    
+                <p class="price"></p>
+              </li>
+            </ul>
+          </div>
+              
+          <div class="book-container">
+            <ul class="best-sellers-list">
+              <li class="card-item" id="card-1">
+                <h4 class="title"></h4>
+                <img class="img"></img>
+                <p class="author"></p>
+                <p class="rating"></p>    
+                <p class="price"></p>
+              </li>
+            </ul>
+          </div>
+    </div>
+    </div>
     </section>
   </main>
 
