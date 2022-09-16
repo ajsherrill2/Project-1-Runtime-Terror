@@ -53,6 +53,7 @@ function formSubmitHandler() {
 
 function getBookInfo() {};
 
+// Comment the below function out when testing!!!!!
 $(document).ready(function getBestSellers() {
     const cards = [...document.querySelectorAll('.card-item')];
         console.log(cards);
@@ -68,24 +69,26 @@ $(document).ready(function getBestSellers() {
             $(".img")[index].src = data.items[0].volumeInfo.imageLinks.thumbnail;
             $(".title")[index].textContent = data.items[0].volumeInfo.title;
             $(".author")[index].textContent = data.items[0].volumeInfo.authors[0];
-            $(".rating")[index].textContent = data.items[0].volumeInfo.averageRating;
+            $(".rating")[index].textContent = data.items[0].volumeInfo.averageRating + '/5';
             $(".price")[index].textContent = '$' + data.items[0].saleInfo.listPrice.amount;
+            if (data.items[0].saleInfo.saleability === 'NOT_FOR_SALE') {
+                $(".price")[index].textContent = "Price unavailable"
+            }
         });
-
     });
 });
 
 const cardItemArray = {
     card1: '978-0143127741',
-    card2: '9780553582017',
-    card3: '978-0316413039',
-    card4: '1439527261',
-    card5: '9780735219113',
+    card2: '9781429992800',
+    card3: '9780316413237',
+    card4: '0544115554',
+    card5: '9781488096785',
     card6: '978-1250754738',
     card7: '978-1982185824',
-    card8: '978-0765365279',
-    card9: '978-0593396599',
-    card10: '978-1594489501'
+    card8: '9781538724743',
+    card9: '9780525657750',
+    card10: '9781101010907'
 };
 
 
