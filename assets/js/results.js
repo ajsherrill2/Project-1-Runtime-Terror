@@ -29,10 +29,12 @@ $(document).ready(function getBookInfo() {
     fetch(resultsAPI).then(function (response) {
         return response.json()
     }).then(function (data) {
-        console.log(data)
-        
-        
-        
+        console.log(data);
+        $(bookTitle)[0].textContent = data.items[0].volumeInfo.title;
+        $(bookCover)[0].src = data.items[0].volumeInfo.imageLinks.thumbnail;
+        $(bookAuthor)[0].textContent = data.items[0].volumeInfo.authors[0];
+        $(bookRating)[0].textContent = data.items[0].volumeInfo.averageRating;
+        $(bookPrice)[0].textContent = data.items[0].saleInfo;
     })
 });
 
