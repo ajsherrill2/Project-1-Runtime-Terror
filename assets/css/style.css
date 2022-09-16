@@ -49,6 +49,16 @@ nav .input-field input {
     
     
 }
+.container-cards {
+    width: 100%;
+    
+}
+
+.book-card {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 200px;
+}
 
 #input-text {
     color: black;
