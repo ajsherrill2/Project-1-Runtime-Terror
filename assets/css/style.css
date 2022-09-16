@@ -51,7 +51,13 @@ nav .input-field input {
 }
 .container-cards {
     width: 100%;
-    justify-content: space-between;
+    
+}
+
+.book-card {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 200px;
 }
 
 #input-text {
