@@ -67,6 +67,19 @@ html {
     background-color: #5D4F54;
 }
 
+/*used this id to center description text*/
+#des-container {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .description {
+        width: 500px;
+        margin-bottom: 50px auto;
+        color: #fff;
+        font-size: 25px;
+    }    
+
 /*used this id to center book img*/
 #pic {
     display: flex;
