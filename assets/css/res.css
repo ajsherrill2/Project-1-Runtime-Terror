@@ -67,6 +67,12 @@ html {
     background-color: #5D4F54;
 }
 
+/*used this id to center book img*/
+#pic {
+    display: flex;
+    justify-content: center;
+}
+
 .img {
     width: auto;
     height: 250px;
