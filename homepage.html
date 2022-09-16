@@ -15,24 +15,33 @@
     <title>The Book Club</title>
   </head>
   
-  <body> 
-    <header class="container">
+
+  <body>
+    <header class="container-header">
       <div class="col s12">
         <h1>The Book Club</h1>
         <nav class="navbar">
-          <div class=" col s12">
-            <form id="book-form" class="card-body">
-              <input
-                id="input-text"
-                type="text"
-                placeholder="Title, Author"
-                class="form-input"
-              />
-              <button id="search-button" type="submit" class="btn">
-                Search
-              </button>
+          <div class="row">
+            <form class="col s12 container-form">
+                <div class="row">
+                    <div class="input-field col s6">
+                      <form id="book-form" class="card-body">
+                        <input
+                          id="input-text"
+                          type="text"
+                          placeholder="Title, Author"
+                          class="form-input"
+                        />
+                      </form>
+                    </div>
+                    <div class="input-field col s6">
+                      <button class="btn hoverable" type="submit" id="search-button" name="action">                      
+                        Submit
+                      </button>
+                    </div>
+                </div>
             </form>
-          </div>
+        </div>
         </nav>
       </div>
     </header>
@@ -47,6 +56,7 @@
           <h3>Top Ten Best-Sellers:</h3>
           <div>
             <ul class="best-sellers-list">
+             
               <li class="card-item" id="card-1">
                 <h4 class="title">Title</h4>
                 <img class="img"></img>
@@ -64,6 +74,7 @@
               </li>
         
               <li class="card-item" id="card-3">
+
                 <h4 class="title">Title</h4>
                 <img class="img"></img>
                 <p class="author">Author</p>
@@ -102,7 +113,7 @@
                 <p class="rating">Rating</p>    
                 <p class="price"></p>
               </li>
-        
+
               <li class="card-item" id="card-8">
                 <h4 class="title">Title</h4>
                 <img class="img"></img>

@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"
+    />
 
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+    <link rel="stylesheet" href="assets/css/res.css" />
+    <title>The Book Club Results</title>
+  </head>
 
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title> The Book Club Results</title>
-</head>
+  <body>
+    <main>
+      <div>
+        <nav class="navbar">
+          <div  class="nav-wrapper">
+            <a href="homepage.html" class="brand-logo center" >The Book Club</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down" >
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </nav>
+        <h3>We Have Your Book Here!</h3>
+      </div>
+    </main>
 
-<body>
-  <main>
-    <div class="title">
-      <nav>
-        <div class="blue-grey darken-1" class="nav-wrapper">
-          <a href="#" class="brand-logo">The Book Club</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </div>
-      </nav>
-      <h3> We Have Your Book Here! </h3>
-    </div>
-  </main>
-  <!----------------Search results build ----------------------------------->
-  <div class="results" class="mood-row">
-    
-    <div class="flex flex-vertical-center">
+    <div class="container"  >
+    <!----------------Search results build ----------------------------------->
+    <div class="results" class="mood-row">
+      <div>
+        <!----------------------a book's title should go here------------------------------->
+        <h4 class="title"></h4>
+      </div>
 
-      <!----------------------a book's title should go here------------------------------->
-      <h4 class="text-center w-70" class="title"></h4>
-    </div>
+      <div>
+        <!-----------------------------------Image for book cover here--------------------------------------------->
+        <img class="img" />
+      </div>
+      <!--------------------------------Book Author will be here------------------------------------->
 
-    <div>
-      <!-----------------------------------Image for book cover here--------------------------------------------->
-      <img class="img" />
-    </div>
-    <!--------------------------------Book Author will be here------------------------------------->
-   
-    <div>
-      <p class="author">
-        </p>
-    </div>
+      <div>
+        <p class="author"></p>
+      </div>
 
-    <!----------------------------------------Book Rating will be here------------------------------------------------->
-    <div>
-      <p class="rating">
-        </p>
-    </div>
-    <!--------------------------------------Book Price goes here------------------------------------------------------------>
-    <div>
-      <p class="price">
-        </p>
+      <!----------------------------------------Book Rating will be here------------------------------------------------->
+      <div>
+        <p class="rating"></p>
+      </div>
+      <!--------------------------------------Book Price goes here------------------------------------------------------------>
+      <div>
+        <p class="price"></p>
+      </div>
     </div>
   </div>
-  
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-  <script src="assets/js/script.js"></script>
-</body>
 
+    <!-- jQuery <script> tag -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery UI <script> tag -->
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+      integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

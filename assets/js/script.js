@@ -6,6 +6,7 @@ const searchBtn = $('#search-button');
 const bioBlockEL = $('.bio-block');
 const bestSellersList = $('.best-sellers-list');
 const cardItem = $('.card');
+
 // Results page & Best-Sellers list
 const resultsPanel = $('.results');
 const bookTitle = $('.title');
@@ -16,8 +17,8 @@ const bookPrice = $('.price');
 
 
 // Other Variables (to be used in a function later)
-let apiUrl = ''; // put future api url here
-let apiKey = ''; // put future api key here
+// let apiUrl = ''; // put future api url here
+// let apiKey = ''; // put future api key here
 // $(resultsPanel).addClass('visible');
 // $(bookTitle)[0].textContent = //input data path
 // $(bookCover)[0].src = //input data path
@@ -30,10 +31,9 @@ let apiKey = ''; // put future api key here
 function formSubmitHandler() {
     let userSearch = $(inputEl)[0].value.replace(/\s/g, '+');
     let QueryUrl = `https://www.googleapis.com/books/v1/volumes?q=${userSearch}&key=AIzaSyAwwfPg0aHfuV0X2St7pVv4uc2RgHEQxCY`;
-    console.log(QueryUrl);
-    fetch(QueryUrl)
-    .then(res => res.json() 
-)   .then(function(data) {
+    return fetch(QueryUrl)
+    .then(res => res.json())
+    .then(function(data) {
         console.log(data)
         let resultsLength = data.items.length;
         let bookTitle = data.items[0].volumeInfo.title;
@@ -42,25 +42,17 @@ function formSubmitHandler() {
         let bookCover = data.items[0].volumeInfo.imageLinks.thumbnail;
         let bookPrice = data.items[0].saleInfo.listPrice;
         let bookISBN = data.items[0].volumeInfo.industryIdentifiers[0];
-        console.log(bookTitle);
-        console.log(resultsLength);
-        console.log(bookAuthor);
-        console.log(bookDescription);
-        console.log(bookCover);
-        console.log(bookPrice);
-        console.log(bookISBN);
+    return bookISBN;     
 })};
 
 function getBookInfo() {};
 
-// Comment the below function out when testing!!!!!
+
+// Please comment the below function out when testing!
 $(document).ready(function getBestSellers() {
     const cards = [...document.querySelectorAll('.card-item')];
-        console.log(cards);
-
     Object.keys(cardItemArray).forEach((key, index) =>  {
         const value = cardItemArray[key];
-        console.log(value);
         var bestSellersQuery = `https://www.googleapis.com/books/v1/volumes?q=${value}&key=AIzaSyAwwfPg0aHfuV0X2St7pVv4uc2RgHEQxCY`;
         fetch(bestSellersQuery)
         .then(res => res.json())       
@@ -71,9 +63,6 @@ $(document).ready(function getBestSellers() {
             $(".author")[index].textContent = data.items[0].volumeInfo.authors[0];
             $(".rating")[index].textContent = data.items[0].volumeInfo.averageRating + '/5';
             $(".price")[index].textContent = '$' + data.items[0].saleInfo.listPrice.amount;
-            if (data.items[0].saleInfo.saleability === 'NOT_FOR_SALE') {
-                $(".price")[index].textContent = "Price unavailable"
-            }
         });
     });
 });
@@ -94,13 +83,17 @@ const cardItemArray = {
 
 Object.keys(cardItemArray).forEach(key =>  {
     const value = cardItemArray[key];
-    console.log(value);
+
 });
 // Event listeners
 $(bookFormEl).on('submit', function (e) {
     e.preventDefault();
 
-    formSubmitHandler();
+
+    formSubmitHandler().then(function (data) {
+        window.location.replace(`./results.html?isbn=${data.identifier}`);
+        console.log(data);
+    });    
 });
 
 $(cardItem).on('click', function () {
