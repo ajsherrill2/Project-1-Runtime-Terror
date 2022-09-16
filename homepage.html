@@ -1,156 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Add google fonts -->
-    <!-- Add font icons -->
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>The Book Club</title>
-  </head>
-  
-  <body>
-    <header class="container-header">
-      <div class="col s12">
-        <h1>The Book Club</h1>
-        <nav class="navbar">
-          <div class="row">
-            <form class="col s12 container-form">
-                <div class="row">
-                    <div class="input-field col s6">
-                      <form id="book-form" class="card-body">
-                        <input
-                          id="input-text"
-                          type="text"
-                          placeholder="Title, Author"
-                          class="form-input"
-                        />
-                      </form>
-                    </div>
-                    <div class="input-field col s6">
-                      <button class="btn hoverable" type="submit" id="search-button" name="action">Submit
-               
-                      </button>
-                    </div>
-                </div>
-            </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Add google fonts -->
+  <!-- Add font icons -->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>The Book Club</title>
+</head>
+
+<body>
+  <header class="container-header">
+    <div class="col s12">
+      <h1>The Book Club</h1>
+      <nav class="navbar">
+        <div class="row">
+          <form class="col s12 container-form">
+            <div class="row">
+              <div class="input-field col s6">
+                <form id="book-form" class="card-body">
+                  <input id="input-text" type="text" placeholder="Title, Author" class="form-input" />
+                </form>
+              </div>
+              <div class="input-field col s6">
+                <button class="btn hoverable" type="submit" id="search-button" name="action">Submit
+
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
-        </nav>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="">
+      <div class="bio-block">
+        <h2>Description Title</h2>
+        <p>this is a description</p>
       </div>
-    </header>
+      <div class="card-list">
+        <h3>Top Ten Best-Sellers:</h3>
+        <div>
+          <div class="container-cards">
+            <div class="row">
+              <div class="col l2 m2 s12">
+                <div class="card sticky-action">
+                  <div class="card-image">
+                    <img src="">
+                    <span class="card-title">Book 1</span>
+                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
+                  </div>
+                  <div class="card-content">
+                    <p>list item info here for book...</p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title">Michael<i class="right">x</i></span>
+                    <p>This is text that will appear</p>
+                  </div>
+                  <div class="card-action">
+                    <a>More Book Information Here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col l2 m2 s12">
+                <div class="card sticky-action">
+                  <div class="card-image">
+                    <img src="">
+                    <span class="card-title">Book 2</span>
+                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
+                  </div>
+                  <div class="card-content">
+                    <p>list item info here for book...</p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title">Michael<i class="right">x</i></span>
+                    <p>This is text that will appear</p>
+                  </div>
+                  <div class="card-action">
+                    <a>More Book Information Here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col l2 m2 s12">
+                <div class="card sticky-action">
+                  <div class="card-image">
+                    <img src="">
+                    <span class="card-title">Book 3</span>
+                    <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
+                  </div>
+                  <div class="card-content">
+                    <p>list item info here for book...</p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title">Michael<i class="right">x</i></span>
+                    <p>This is text that will appear</p>
+                  </div>
+                  <div class="card-action">
+                    <a>More Book Information Here</a>
+                  </div>
+                </div>
+                <div class="col l2 m2 s12">
+                  <div class="card sticky-action">
+                    <div class="card-image">
+                      <img src="">
+                      <span class="card-title">Book 4</span>
+                      <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
+                    </div>
+                    <div class="card-content">
+                      <p>list item info here for book...</p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title">Michael<i class="right">x</i></span>
+                      <p>This is text that will appear</p>
+                    </div>
+                    <div class="card-action">
+                      <a>More Book Information Here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l2 m2 s12">
+                  <div class="card sticky-action">
+                    <div class="card-image">
+                      <img src="">
+                      <span class="card-title">Book 5</span>
+                      <a class="btn blue btn-floating halfway-fab pulse activator">+</a>
+                    </div>
+                    <div class="card-content">
+                      <p>list item info here for book...</p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title">Michael<i class="right">x</i></span>
+                      <p>This is text that will appear</p>
+                    </div>
+                    <div class="card-action">
+                      <a>More Book Information Here</a>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+            </div>
+           
 
-    <main class="container">
-      <section class="">
-        <div class="bio-block">
-          <h2>Description Title</h2>
-          <p>this is a description</p>
+
+
+
+
+
+
+
+
+          <ul class="best-sellers-list">
+
+            <li class="card-item" id="card-1">
+              <h4 class="title">Title</h4>
+              <img class="img">Image</img>
+              <p class="author">Author</p>
+              <p class="rating">Rating</p>
+              <p class="price">Price</p>
+            </li>
+
+            <li class="card-item" id="card-2">
+              <h4 class="title">Title</h4>
+              <img class="img">Image</img>
+              <p class="author">Author</p>
+              <p class="rating">Rating</p>
+              <p class="price">Price</p>
+            </li>
+
+            <li class="card-item" id="card-3">
+              <h4 class="title">Title</h4>
+              <img class="img">Image</img>
+              <p class="author">Author</p>
+              <p class="rating">Rating</p>
+              <p class="price">Price</p>
+            </li>
+
+            <li class="card-item" id="card-4">
+              <h4 class="title">Title</h4>
+              <img class="img">Image</img>
+              <p class="author">Author</p>
+              <p class="rating">Rating</p>
+              <p class="price">Price</p>
+            </li>
+
+            <li class="card-item" id="card-5">
+              <h4 class="title">Title</h4>
+              <img class="img">Image</img>
+              <p class="author">Author</p>
+              <p class="rating">Rating</p>
+              <p class="price">Price</p>
+            </li>
+
+            <li class="card-item" id="card-6">
+              <h4 class="title">Title</h4>
+              <img class="img">Image</img>
+              <p class="author">Author</p>
+              <p class="rating">Rating</p>
+              <p class="price">Price</p>
+            </li>
+
+            <li class="card-item" id="card-7">
+              <h4 class="title">Title</h4>
+              <img class="img">Image</img>
+              <p class="author">Author</p>
+              <p class="rating">Rating</p>
+              <p class="price">Price</p>
+            </li>
+            </li>
+
+            <li class="card-item" id="card-8">
+              <h4 class="title">Title</h4>
+              <img class="img">Image</img>
+              <p class="author">Author</p>
+              <p class="rating">Rating</p>
+              <p class="price">Price</p>
+            </li>
+
+            </li>
+            <li class="card-item" id="card-9">
+              <h4 class="title">Title</h4>
+              <img class="img">Image</img>
+              <p class="author">Author</p>
+              <p class="rating">Rating</p>
+              <p class="price">Price</p>
+            </li>
+
+            <li class="card-item" id="card-10">
+              <h4 class="title">Title</h4>
+              <img class="img">Image</img>
+              <p class="author">Author</p>
+              <p class="rating">Rating</p>
+              <p class="price">Price</p>
+            </li>
+          </ul>
         </div>
-        <div class="card-list">
-          <h3>Top Ten Best-Sellers:</h3>
-          <div>
-            <ul class="best-sellers-list">
-             
-              <li class="card-item" id="card-1">
-                <h4 class="title">Title</h4>
-                <img class="img">Image</img>
-                <p class="author">Author</p>
-                <p class="rating">Rating</p>    
-                <p class="price">Price</p>
-              </li>
-              
-              <li class="card-item" id="card-2">
-                <h4 class="title">Title</h4>
-                <img class="img">Image</img>
-                <p class="author">Author</p>
-                <p class="rating">Rating</p> 
-                <p class="price">Price</p></li>
-             
-                <li class="card-item" id="card-3">
-                <h4 class="title">Title</h4>
-                <img class="img">Image</img>
-                <p class="author">Author</p>
-                <p class="rating">Rating</p>    
-                <p class="price">Price</p></li>
-             
-                <li class="card-item" id="card-4">
-                <h4 class="title">Title</h4>
-                <img class="img">Image</img>
-                <p class="author">Author</p>
-                <p class="rating">Rating</p>    
-                <p class="price">Price</p></li>
-             
-                <li class="card-item" id="card-5">
-                <h4 class="title">Title</h4>
-                <img class="img">Image</img>
-                <p class="author">Author</p>
-                <p class="rating">Rating</p>    
-                <p class="price">Price</p></li>
-             
-                <li class="card-item" id="card-6">
-                <h4 class="title">Title</h4>
-                <img class="img">Image</img>
-                <p class="author">Author</p>
-                <p class="rating">Rating</p>    
-                <p class="price">Price</p></li>
-             
-                <li class="card-item" id="card-7">
-                <h4 class="title">Title</h4>
-                <img class="img">Image</img>
-                <p class="author">Author</p>
-                <p class="rating">Rating</p>    
-                <p class="price">Price</p></li>
-              </li>
-             
-              <li class="card-item" id="card-8">
-                <h4 class="title">Title</h4>
-                <img class="img">Image</img>
-                <p class="author">Author</p>
-                <p class="rating">Rating</p>    
-                <p class="price">Price</p></li>
-               
-              </li><li class="card-item" id="card-9">
-                <h4 class="title">Title</h4>
-                <img class="img">Image</img>
-                <p class="author">Author</p>
-                <p class="rating">Rating</p>    
-                <p class="price">Price</p></li>
-              
-                <li class="card-item" id="card-10">
-                <h4 class="title">Title</h4>
-                <img class="img">Image</img>
-                <p class="author">Author</p>
-                <p class="rating">Rating</p>    
-                <p class="price">Price</p></li>
-            </ul>
-          </div>
-          
-        </div>
-      </section>
-    </main>
 
-    <footer></footer>
+      </div>
+    </section>
+  </main>
 
-    <!-- jQuery <script> tag -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
-    <!-- jQuery UI <script> tag -->
-    <script
-      src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
-      integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+  <footer></footer>
+
+  <!-- jQuery <script> tag -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- jQuery UI <script> tag -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+    integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
