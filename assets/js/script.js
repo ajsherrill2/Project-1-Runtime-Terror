@@ -15,14 +15,11 @@ const bookAuthor = $('.author');
 const bookRating = $('.rating');
 const bookPrice = $('.price');
 
-// API Key
-const key = 'AIzaSyBQjnQbzAE1tdE-zUjqjMcAkeuR_B5X53s'
-
 // Functions
 // Function that catches relevant information on books searched
 function formSubmitHandler() {
     let userSearch = $(inputEl)[0].value.replace(/\s/g, '+');
-    let QueryUrl = `https://www.googleapis.com/books/v1/volumes?q=${userSearch}&key=${key}`;
+    let QueryUrl = `https://www.googleapis.com/books/v1/volumes?q=${userSearch}&key=AIzaSyBQjnQbzAE1tdE-zUjqjMcAkeuR_B5X53s`;
     return fetch(QueryUrl)
     .then(res => res.json())
     .then(function(data) {
@@ -33,10 +30,9 @@ function formSubmitHandler() {
 
 // Please comment the below function out when testing!
 $(document).ready(function getBestSellers() {
-    const cards = [...document.querySelectorAll('.card-item')];
     Object.keys(cardItemArray).forEach((key, index) =>  {
         const value = cardItemArray[key];
-        var bestSellersQuery = `https://www.googleapis.com/books/v1/volumes?q=${value}&key=${key}`;
+        var bestSellersQuery = `https://www.googleapis.com/books/v1/volumes?q=${value}&key=AIzaSyBQjnQbzAE1tdE-zUjqjMcAkeuR_B5X53s`;
         fetch(bestSellersQuery)
         .then(res => res.json())       
         .then(function(data) {
@@ -45,7 +41,6 @@ $(document).ready(function getBestSellers() {
             $(".title")[index].textContent = data.items[0].volumeInfo.title;
             $(".author")[index].textContent = data.items[0].volumeInfo.authors[0];
             $(".rating")[index].textContent = data.items[0].volumeInfo.averageRating + '/5';
-            $(".price")[index].textContent = '$' + data.items[0].saleInfo.listPrice.amount;
         });
     });
 });
