@@ -14,6 +14,8 @@ const bookAuthor = $('.author');
 const bookDescription = $('.description');
 const bookRating = $('.rating');
 const bookPrice = $('.price');
+const bookLink = $('#store');
+
 
 // Gets the ISBN of search input 
 const url = new URL(getCurrentUrl());
@@ -37,6 +39,7 @@ $(document).ready(function getBookInfo() {
         $(bookDescription)[0].textContent = data.items[0].volumeInfo.description;
         $(bookRating)[0].textContent = 'Rating: ' + data.items[0].volumeInfo.averageRating + '/5';
         $(bookPrice)[0].textContent =  '$' + data.items[0].saleInfo.listPrice.amount;
+        $(bookLink)[0].href = data.items[0].saleInfo.buyLink;
     })
 });
 
