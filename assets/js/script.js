@@ -61,7 +61,6 @@ const cardItemArray = {
 
 Object.keys(cardItemArray).forEach(key =>  {
     const value = cardItemArray[key];
-
 });
 
 // Event listeners
