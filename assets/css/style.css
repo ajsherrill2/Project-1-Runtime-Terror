@@ -25,12 +25,6 @@ body {
     line-height: 1.5;
 }
 
-.container-header {
-    width: 100%;
-    padding: 0;
-    margin: 10px;
-}
-
 h1 {
     text-align: center;
 }
@@ -43,58 +37,19 @@ h1 {
 .nav-wrapper {
     border-radius: 15px;
     background-color: #c0c0c0;
-    justify-content: center;
-    align-items: center;
 }
 
-.container-cards {
-    width: 100%;
-    
-}
-
-.book-card {
-    display: flex;
-    justify-content: space-evenly;
-    min-width: 200px;
-}
-
+/*Do not touch this code at all*/
 #book-form {
     display: flex;
-    max-width: 33%;
     align-items: center;
-    justify-content: space-between;
     text-align: center;
-    flex-grow: 1;
-}
 
-form {
-    display: flex;
-    margin-top: .5%;
-    flex-grow: 2;
-}
-
-#input-text {
-    font-size: 16px;
-    color: black;
-    background-color: white;
-    border-radius: 15px;
-    text-align: center;
-    margin: auto;
 }
 
 #search-button {
     background-color: #5D4F54 !important;
 }
-
-
-
-
-/* changes grey placeholder text to more visible black */
-
-::placeholder { 
-    color: var(--black-2);
-    font-size: 24px;
-} 
 
  /*bio description and instruction notes container*/
 
@@ -125,6 +80,7 @@ form {
     border-radius: 20px;
     color: #fff;
     max-width: 350px;
+    max-height: 300px;
 }
 
 /*container holding javascript stuff*/
@@ -138,3 +94,18 @@ form {
     text-align: center;
     border-radius: 20px;
 }
+
+.button {
+    margin-left: 10px;
+}
+
+.book-input {
+    background-color: seashell !important; 
+    
+}
+
+.input-field {
+    padding-top: 13px;
+}
+
+
