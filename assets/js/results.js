@@ -36,6 +36,7 @@ $(document).ready(function getBookInfo() {
         $(bookAuthor)[0].textContent = data.items[0].volumeInfo.authors[0];
         $(bookDescription)[0].textContent = data.items[0].volumeInfo.description;
         $(bookRating)[0].textContent = 'Rating: ' + data.items[0].volumeInfo.averageRating + '/5';
+        $(bookPrice)[0].textContent =  '$' + data.items[0].saleInfo.listPrice.amount;
     })
 });
 
