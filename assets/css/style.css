@@ -34,6 +34,10 @@ h1 {
     text-align: center;
 }
 
+h4{
+    font-size: 20px;
+}
+
 .nav-wrapper {
     border-radius: 15px;
     background-color: #c0c0c0;
@@ -62,7 +66,7 @@ h1 {
     font-size: 25px;
 }
 
-/*entire card container*/
+/*entire card container, dashed one*/
 #book-div{
     margin-top: 100px;
     border-radius: 20px;
@@ -71,7 +75,7 @@ h1 {
     border:#fff dashed;
 }
 
-/*javascript stuff inserted*/
+/*container holding javascript stuff, the light brown square */
 .book-container {
     background-color: #5D4F54;
     display:block;
@@ -80,10 +84,10 @@ h1 {
     border-radius: 20px;
     color: #fff;
     max-width: 350px;
-    max-height: 300px;
+    max-height: 350px;
 }
 
-/*container holding javascript stuff*/
+/*container holding javascript stuff target display properties of the light brown square */
 #book-record {
     margin: 0;
     display: flex;
@@ -95,17 +99,29 @@ h1 {
     border-radius: 20px;
 }
 
+/*target the button to have extra space between it and search input box*/
 .button {
     margin-left: 10px;
 }
 
-.book-input {
-    background-color: seashell !important; 
-    
-}
-
+/*target the input box*/
 .input-field {
     padding-top: 13px;
+    background-color: #fff !important; 
+}
+
+/*changing img size will fix how contents will be dsiplayed in light brown container*/
+
+.img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/*used this to make border 3d on nav*/
+#nav-container {
+    border: solid;
+    border-width: 1px 4px 12px 4px;
+    border-color: #c0c0c0 #007acc #221D1F #007acc;
 }
 
 

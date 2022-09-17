@@ -57,7 +57,22 @@ html {
     color: #fff;
     font-size: 20px;
     background-color: #5D4F54;
+    
 }
+
+/*target paragraph rating and price to create styles*/
+p.rating {
+    border: double;
+    border-color: #c0c0c0 #007acc #221D1F #007acc;
+    text-align: center;
+}
+
+p.price {
+    border: double;
+    border-color: #c0c0c0 #007acc #221D1F #007acc;
+    text-align: center;
+}
+
 
 .price {
     width: 250px;
@@ -90,3 +105,11 @@ html {
     width: auto;
     height: 250px;
 }
+
+/*used this to make border 3d on nav*/
+#intro {
+    border: solid;
+    border-width: 1px 4px 12px 4px;
+    border-color: #c0c0c0 #007acc #221D1F #007acc;
+}
+
