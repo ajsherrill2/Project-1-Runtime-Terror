@@ -49,8 +49,6 @@ Bulma (Third-party Styles API) OR Materialize (Third-party Styles API)
 
 Sarah Vacio - HTML & CSS
 
-Brittany Burney - Html & CSS
-
 Michael Harrison - HTMl & CSS
 
 Aiden Krbec - HTML & JS
