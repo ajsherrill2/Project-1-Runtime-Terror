@@ -27,6 +27,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 3.5rem;
 }
 
 /*h3 text*/
@@ -54,6 +55,7 @@ h4{
 
 #search-button {
     background-color: #5D4F54 !important;
+    border-radius: 5px;
 }
 
  /*bio description and instruction notes container*/
@@ -109,6 +111,7 @@ h4{
 .input-field {
     padding-top: 13px;
     background-color: #fff !important; 
+    border-radius: 10px;
 }
 
 /*changing img size will fix how contents will be dsiplayed in light brown container*/
@@ -139,7 +142,48 @@ header {
  }
 
  #nav-br {
+    width: fit-content;
+    background-color: var(--black-2) !important;
+    border-radius: 10px;
    
  }
  
- 
+
+/* Media Query Styling */
+
+
+@media screen and (max-width: 975px) {
+    header {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 530px) {
+    #book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 3rem;
+        margin-bottom: 25px;
+    }
+
+    .button {
+        margin-top: 12px;
+    }
+    
+    header {
+        padding-bottom: 60px;
+    }
+    
+   
+
+        
+
+
+}
+    
