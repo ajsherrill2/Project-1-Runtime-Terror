@@ -38,6 +38,7 @@ h4{
     font-size: 20px;
 }
 
+/*
 .nav-wrapper {
     border-radius: 15px;
     background-color: #c0c0c0;
@@ -117,11 +118,28 @@ h4{
     max-height: 150px;
 }
 
-/*used this to make border 3d on nav*/
+/*used this to make border 3d on nav
 #nav-container {
     border: solid;
     border-width: 1px 4px 12px 4px;
-    border-color: #c0c0c0 #007acc #221D1F #007acc;
-}
+    border-color: #c0c0c0 #007acc #221D1F #007acc; 
+} */
 
 
+header {
+    display: flex;
+     /* Pushes left and right item to for edges and items in middle will be evenly spaced */
+     justify-content: space-between;
+     align-items: center;
+     padding: 30px 10%;
+     background-color: var(--black-2);
+     box-shadow: 0 1px 8px var(--black-2);
+     width: 100%;
+ 
+ }
+
+ #nav-br {
+   
+ }
+ 
+ 
