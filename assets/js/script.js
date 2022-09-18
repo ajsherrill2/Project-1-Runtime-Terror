@@ -24,8 +24,9 @@ function formSubmitHandler() {
     .then(res => res.json())
     .then(function(data) {
         console.log(data)
-        let bookISBN = data.items[0].volumeInfo.industryIdentifiers[0];
-    return bookISBN;     
+        let bookISBN = data.items[0].volumeInfo.industryIdentifiers[0].identifier;
+        // Adds ISBN to localStorage
+        localStorage.setItem('ISBN', bookISBN);
 })};
 
 // Please comment the below function out when testing!
@@ -68,9 +69,8 @@ $(bookFormEl).on('submit', function (e) {
     e.preventDefault();
 
 
-    formSubmitHandler().then(function (data) {
-        window.location.replace(`./results.html?isbn=${data.identifier}`);
-        console.log(data);
+    formSubmitHandler().then(function () {
+        window.location.replace(`./results.html`);
     });    
 });
 
