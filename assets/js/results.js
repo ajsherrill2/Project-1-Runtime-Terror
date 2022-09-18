@@ -16,17 +16,10 @@ const bookRating = $('.rating');
 const bookPrice = $('.price');
 const bookLink = $('#store');
 
-
-// Gets the ISBN of search input 
-const url = new URL(getCurrentUrl());
-const isbn = url.searchParams.get('isbn');
-
-function getCurrentUrl() {
-    return window.location.href;
-}
-
-// function
+// Function retrieves data for specific user input
 $(document).ready(function getBookInfo() {
+    // Gets ISBN from localStorage
+    let isbn = localStorage.getItem('ISBN');
     resultsAPI = `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`
 
     fetch(resultsAPI).then(function (response) {
