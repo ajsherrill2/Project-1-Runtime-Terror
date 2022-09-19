@@ -5,7 +5,7 @@ const inputEl = $('#input-text');
 const searchBtn = $('#search-button');
 const bioBlockEL = $('.bio-block');
 const bestSellersList = $('.best-sellers-list');
-const cardItem = $('.card');
+const cardItem = $('#book-record');
 
 // Results page & Best-Sellers list
 const resultsPanel = $('.results');
@@ -17,8 +17,8 @@ const bookPrice = $('.price');
 
 // Functions
 // Function that catches relevant information on books searched
-function formSubmitHandler() {
-    let userSearch = $(inputEl)[0].value.replace(/\s/g, '+');
+function formSubmitHandler(results) {
+    let userSearch = $(inputEl)[0].value.replace(/\s/g, '+') || results.replace(/\s/g, '+');
     let QueryUrl = `https://www.googleapis.com/books/v1/volumes?q=${userSearch}&key=AIzaSyBQjnQbzAE1tdE-zUjqjMcAkeuR_B5X53s`;
     return fetch(QueryUrl)
     .then(res => res.json())
@@ -74,9 +74,12 @@ $(bookFormEl).on('submit', function (e) {
     });    
 });
 
-$(cardItem).on('click', function () {
-    let bestSellerSearch = this.$('h4');
+$(cardItem).on('click', '.title', function () {
+    let bestSellerSearch = this.innerText;
 
-    formSubmitHandler(bestSellerSearch);
+    formSubmitHandler(bestSellerSearch).then(function () {
+        window.location.replace('./results.html');
+    });
 });
+
 
