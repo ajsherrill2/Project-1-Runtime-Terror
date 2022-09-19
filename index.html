@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add google fonts -->
+    <!-- Add font icons -->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>The Book Club</title>
+  </head>
+  
+  <body> 
+    <header id="top">   
+      <h1 class="logo">The Book Club</h1>
+      <nav id="nav-br">
+        <ul class="nav-links">
+            <li>
+              <form id="book-form">
+                <div class="input-field right">
+                  <input id="input-text" id="search" type="search" required>
+                  <label class="label-icon" for="search"><i class="material-icons"></i></label>
+                  <i class="material-icons"></i>
+                </div>
+                <div class="button">
+                  <button class="btn right hoverable" type="submit" id="search-button">                      
+                    Submit
+                  </button>
+              </form>
+            </div>
+            </li>
+        </ul>
+      </nav>
+  </header>
+
+  <main class="container">
+    <div class="bio-container">
+      <div class="bio-block">
+        <h2>The book companion app you can trust.</h2>
+        <p>Looking for something to read? Simply enter the title of the book you're interested in and hit the search button to learn more. If you're looking for some reading material, try one of these best sellers on the homepage!</p>
+        <div id="qotd_t"></div>
+        <script async src="https://www.quotepub.com/qotd_t.js"></script>
+      </div>
+    </div>
+   
+    <div class="card-list" id="book-div" >
+      <div id="text"> 
+        <h3>Top Best-Sellers:</h3> 
+      </div>
+      <div id="book-record">
+        <div class="book-container">
+          <ul class="best-sellers-list">
+            <li class="card-item" id="card-1">
+              <h4 class="title"></h4>
+              <img class="img"></img>
+              <p class="author"></p>
+              <p class="rating"></p>
+              <p class="price"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="book-container">
+          <ul class="best-sellers-list">
+            <li class="card-item" id="card-2">
+              <h4 class="title"></h4>
+              <img class="img"></img>
+              <p class="author"></p>
+              <p class="rating"></p>  
+              <p class="price"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="book-container">
+          <ul class="best-sellers-list">
+            <li class="card-item" id="card-3">
+              <h4 class="title"></h4>
+              <img class="img"></img>
+              <p class="author"></p>
+              <p class="rating"></p>    
+              <p class="price"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="book-container">
+          <ul class="best-sellers-list">
+            <li class="card-item" id="card-4">
+              <h4 class="title"></h4>
+              <img class="img"></img>
+              <p class="author"></p>
+              <p class="rating"></p>    
+              <p class="price"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="book-container">
+          <ul class="best-sellers-list">
+            <li class="card-item" id="card-5">
+              <h4 class="title"></h4>
+              <img class="img"></img>
+              <p class="author"></p>
+              <p class="rating"></p>    
+              <p class="price"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="book-container">
+          <ul class="best-sellers-list">
+            <li class="card-item" id="card-6">
+              <h4 class="title"></h4>
+              <img class="img"></img>
+              <p class="author"></p>
+              <p class="rating"></p>    
+              <p class="price"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="book-container">
+          <ul class="best-sellers-list">
+            <li class="card-item" id="card-7">
+              <h4 class="title"></h4>
+              <img class="img"></img>
+              <p class="author"></p>
+              <p class="rating"></p>    
+              <p class="price"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="book-container">
+          <ul class="best-sellers-list">
+            <li class="card-item" id="card-8">
+              <h4 class="title"></h4>
+              <img class="img"></img>
+              <p class="author"></p>
+              <p class="rating"></p>    
+            </li>
+          </ul>
+        </div>
+        <div class="book-container">
+          <ul class="best-sellers-list">
+            <li class="card-item" id="card-9">
+              <h4 class="title"></h4>
+              <img class="img"></img>
+              <p class="author"></p>
+              <p class="rating"></p>    
+              <p class="price"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="book-container">
+          <ul class="best-sellers-list">
+            <li class="card-item" id="card-10">
+              <h4 class="title"></h4>
+              <img class="img"></img>
+              <p class="author"></p>
+              <p class="rating"></p>    
+              <p class="price"></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <!-- jQuery <script> tag -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- jQuery UI <script> tag -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+    integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
