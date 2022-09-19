@@ -1,0 +1,189 @@
+:root {
+    /* theme from https://www.color-hex.com/color-palette/98179 dark theme */
+    --white: #fff;
+    --blue: #007acc;
+    --smoke: #c0c0c0;
+    --light-gray: #D3D3D3;
+    --gray-2: #3e3e42;
+    --gray-3: #2d2d30;
+    --black-1: #252526;
+    --black-2: #1e1e1e;
+    --border-radius: 0.3rem;
+    --box-shadow: 0 1px 4px 0px rgb(0 0 0 / 20%);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: var(--gray-2);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Add font */
+    color: var(--white); 
+    margin: 5px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+/*h3 text*/
+#text{
+    text-align: center;
+}
+
+h4{
+    font-size: 20px;
+}
+
+/*
+.nav-wrapper {
+    border-radius: 15px;
+    background-color: #c0c0c0;
+}
+
+/*Do not touch this code at all*/
+#book-form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+#search-button {
+    background-color: #5D4F54 !important;
+    border-radius: 5px;
+}
+
+ /*bio description and instruction notes container*/
+
+ .bio-container {
+    background-color: #221D1F;
+    border-radius: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    border: dashed;
+    font-size: 25px;
+}
+
+/*entire card container, dashed one*/
+#book-div{
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #221D1F;  
+    border:#fff dashed;
+}
+
+/*container holding javascript stuff, the light brown square */
+.book-container {
+    background-color: #5D4F54;
+    display:block;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    color: #fff;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+/*container holding javascript stuff target display properties of the light brown square */
+#book-record {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/*target the button to have extra space between it and search input box*/
+.button {
+    margin-left: 10px;
+}
+
+/*target the input box*/
+.input-field {
+    padding-top: 13px;
+    background-color: #fff !important; 
+    border-radius: 10px;
+}
+
+/*changing img size will fix how contents will be dsiplayed in light brown container*/
+
+.img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/*used this to make border 3d on nav
+#nav-container {
+    border: solid;
+    border-width: 1px 4px 12px 4px;
+    border-color: #c0c0c0 #007acc #221D1F #007acc; 
+} */
+
+
+header {
+    display: flex;
+     /* Pushes left and right item to for edges and items in middle will be evenly spaced */
+     justify-content: space-between;
+     align-items: center;
+     padding: 30px 10%;
+     background-color: var(--black-2);
+     box-shadow: 0 1px 8px var(--black-2);
+     width: 100%;
+ 
+ }
+
+ #nav-br {
+    width: fit-content;
+    background-color: var(--black-2) !important;
+    border-radius: 10px;
+   
+ }
+ 
+
+/* Media Query Styling */
+
+
+@media screen and (max-width: 975px) {
+    header {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 530px) {
+    #book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 3rem;
+        margin-bottom: 25px;
+    }
+
+    .button {
+        margin-top: 12px;
+    }
+    
+    header {
+        padding-bottom: 60px;
+    }
+    
+   
+
+        
+
+
+}
+    
